@@ -1,0 +1,28 @@
+.margin-bottom-sm {
+  margin-bottom: 1.5rem;
+}
+
+.hr {
+  width: 60%;
+  border: 1.5px solid $navy;
+  margin-bottom: 3rem;
+
+  &--projects {
+    margin-left: -12rem;
+  }
+  &--about {
+    margin-left: -30rem;
+  }
+  &--contact {
+    margin-left: -30rem;
+  }
+}
+
+.arrow {
+  font-size: 4rem;
+  text-decoration: none;
+  transition: all 0.2 ease;
+  &:hover {
+    color: $blue;
+  }
+}

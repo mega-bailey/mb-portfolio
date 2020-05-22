@@ -1,0 +1,99 @@
+.block-collage {
+  position: relative;
+  z-index: -10;
+  @include respond(phone) {
+    opacity: 20%;
+  }
+}
+.block {
+  border: 2px solid $navy;
+  border-radius: 3px;
+  position: absolute;
+  &--1 {
+    right: 2rem;
+    bottom: 30rem;
+    padding: 7rem 8rem;
+    background: rgba($pink, 0.8);
+  }
+  &--2 {
+    right: 15rem;
+    bottom: 24rem;
+    padding: 5rem 8rem;
+    background: rgba($light-blue, 0.7);
+  }
+  &--3 {
+    right: 4px;
+    bottom: 18rem;
+    padding: 10rem 8rem;
+    background: rgba($teal, 0.7);
+    @include respond(phone) {
+      bottom: -58rem;
+    }
+  }
+  &--4 {
+    right: 28rem;
+    bottom: 10rem;
+    padding: 9rem 9rem;
+    background: rgba($pink, 0.9);
+  }
+  &--5 {
+    right: 18rem;
+    bottom: 5rem;
+    padding: 6rem 11rem;
+    background: rgba($blue, 0.9);
+  }
+  &--6 {
+    right: 8rem;
+    bottom: 9rem;
+    padding: 8rem 8rem;
+    background: rgba($blue, 0.7);
+  }
+  &--7 {
+    right: 0;
+    bottom: 0;
+    padding: 9rem 8rem;
+    background: rgba($yellow, 0.8);
+  }
+  &--8 {
+    right: 4rem;
+    bottom: -14rem;
+    padding: 10rem 10rem;
+    background: rgba($light-blue, 0.7);
+  }
+  &--9 {
+    right: 39rem;
+    bottom: -15rem;
+    padding: 6rem 10rem;
+    background: rgba($pink, 0.7);
+  }
+  &--10 {
+    right: 25rem;
+    bottom: -35rem;
+    padding: 4rem 9rem;
+    background: rgba($yellow, 0.9);
+  }
+  &--11 {
+    right: 47rem;
+    bottom: -25rem;
+    padding: 10rem 14rem;
+    background: rgba($teal, 0.7);
+  }
+  &--12 {
+    right: 3rem;
+    bottom: -24rem;
+    padding: 14rem 8rem;
+    background: rgba($blue, 0.8);
+  }
+  &--13 {
+    right: 45rem;
+    bottom: -28rem;
+    padding: 8rem 8rem;
+    background: rgba($yellow, 0.8);
+  }
+  &--14 {
+    right: 38rem;
+    bottom: -20rem;
+    padding: 5rem 7rem;
+    background: rgba($light-blue, 0.7);
+  }
+}

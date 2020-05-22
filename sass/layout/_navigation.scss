@@ -1,0 +1,98 @@
+///**** NAVIGATION SECTIONS *****
+.logo {
+  height: 6rem;
+  @include respond(phone) {
+    height: 5rem;
+  }
+}
+.navbar-wrapper {
+  background-color: rgba($white, 1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 40;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  @include respond(phone) {
+    padding: 2rem;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5rem 0;
+  @include respond(phone) {
+    padding: 2rem 0;
+  }
+}
+
+////***** NAVBAR & SOCIAL LINKS *****
+.navbar-social {
+  &__links {
+    width: 18%;
+    text-align: right;
+    font-size: $default-font-size;
+    font-family: $font-display;
+    font-weight: 200;
+    text-transform: uppercase;
+    @include respond(tab-port) {
+      width: auto;
+    }
+    @include respond(phone) {
+      font-size: 1.6rem;
+    }
+  }
+  &__link {
+    position: relative;
+    display: block;
+    color: $navy;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    z-index: 10;
+    &:after {
+      @include after;
+      right: -275px;
+      bottom: -4px;
+      width: 22rem;
+      height: 17px;
+      border: 1.3px solid $navy;
+      border-radius: 2px;
+      z-index: -5;
+      transition: all 0.6s;
+    }
+
+    &:hover {
+      transition: all 0.6s;
+      cursor: pointer;
+      border-bottom: 2px solid $navy;
+      &:after {
+        right: -105px;
+      }
+    }
+    &--blue {
+      &:after {
+        background: rgba($blue, 0.9);
+      }
+    }
+    &--pink {
+      &:after {
+        background: rgba($pink, 0.9);
+      }
+    }
+    &--teal {
+      &:after {
+        background: rgba($teal, 0.9);
+      }
+    }
+    &--yellow {
+      &:after {
+        background: rgba($yellow, 0.9);
+      }
+    }
+  }
+}

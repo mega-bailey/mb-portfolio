@@ -1,0 +1,203 @@
+body {
+  font-family: $font-primary;
+  font-size: $default-font-size;
+  background-color: $white;
+  color: $navy;
+}
+
+////***** HEADINGS TYPOGRAPHY *****
+.heading {
+  font-family: $font-display;
+}
+
+.heading-1 {
+  font-size: 9rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  line-height: 6rem;
+  @include respond(tab-port) {
+    font-size: 7rem;
+  }
+  @include respond(phone) {
+    font-weight: 200;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+}
+
+.heading-2 {
+  font-size: 10rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 7rem;
+  @include respond(tab-port) {
+    font-size: 8rem;
+  }
+  @include respond(phone) {
+    font-size: 6rem;
+    line-height: 6rem;
+    text-align: center;
+  }
+}
+
+.hi-link {
+  font-family: $font-display;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: $blue;
+  font-size: 4.5rem;
+
+  @supports (-webkit-text-stroke: 2px $navy) {
+    -webkit-text-stroke: 2px $navy;
+    -webkit-text-fill-color: transparent;
+    @include respond(tab-port) {
+      -webkit-text-stroke: 1.5px $navy;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  @include respond(phone) {
+    font-size: 4rem;
+  }
+}
+@supports (-webkit-text-stroke: 2px $navy) {
+  .hi-link:hover {
+    -webkit-text-stroke: 2px $blue;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.2s ease-out;
+    border-bottom: 2px solid $blue;
+  }
+}
+
+.heading-3 {
+  width: 100%;
+  font-weight: 700;
+  font-size: 11rem;
+  letter-spacing: 3px;
+  @include respond(phone) {
+    font-size: 6rem;
+  }
+
+  &--about {
+    writing-mode: vertical-lr;
+    font-size: 13rem;
+    @include respond(phone) {
+      font-size: 6rem;
+      writing-mode: horizontal-tb;
+    }
+  }
+  &--contact {
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+}
+@supports (-webkit-text-stroke: 2px $navy) {
+  h2,
+  h3 {
+    -webkit-text-stroke: 2px $navy;
+    -webkit-text-fill-color: transparent;
+    @include respond(tab-port) {
+      -webkit-text-stroke: 1.7px $navy;
+    }
+  }
+}
+
+.heading-4 {
+  font-size: 4rem;
+  @include respond(phone) {
+    font-size: 3rem;
+  }
+}
+
+//***** TYPOGRAPHY *****
+
+.paragraph-wrapper {
+  &--contact {
+    width: 65%;
+    background-color: $navy;
+  }
+}
+
+.paragraph {
+  font-family: $font-display;
+  font-size: $default-font-size;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+  &--header {
+    font-size: 3.7rem;
+    font-weight: 300;
+    font-family: $font-primary;
+    @include respond(phone) {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  }
+  &--header > a {
+    color: $navy;
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+  //PROJECTS SECTION
+  &__projects {
+    &--descr {
+      padding-bottom: 1rem;
+    }
+    &--languages {
+      font-size: 1.8rem;
+      color: rgba($navy, 0.7);
+    }
+  }
+  //ABOUT SECTION
+  &--about {
+    text-align: right;
+    font-family: $font-display;
+    line-height: 3rem;
+  }
+
+  //CONTACT SECTION
+  &--contact-about {
+    font-size: 2.7rem;
+    font-weight: 200;
+    width: 75%;
+    color: $white;
+    font-family: $font-primary;
+    @include respond(phone) {
+      width: 100%;
+      font-size: $default-font-size;
+    }
+  }
+  &--email {
+    font-weight: 700;
+    font-size: 6rem;
+
+    @supports (-webkit-text-stroke: 2px $navy) {
+      -webkit-text-stroke: 2px $navy;
+      -webkit-text-fill-color: $white;
+      @include respond(phone) {
+        -webkit-text-stroke: 1.5px $navy;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      font-size: 6rem;
+
+      &:hover {
+        transition: all 0.2s ease-out;
+        border-bottom: 2px solid $blue;
+        @supports (-webkit-text-stroke: 2px $blue) {
+          -webkit-text-stroke: 2px $blue;
+          -webkit-text-fill-color: $white;
+        }
+      }
+    }
+    @include respond(phone) {
+      font-size: 4rem;
+      text-align: right;
+    }
+  }
+}
