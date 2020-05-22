@@ -28,4 +28,7 @@
   &:active {
     box-shadow: 0 0 4px 2px rgba($navy, 0.1);
   }
+  @include respond(phone) {
+    font-weight: 300;
+  }
 }
