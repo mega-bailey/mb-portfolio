@@ -21,7 +21,7 @@ body {
   }
   @include respond(phone) {
     font-weight: 200;
-    font-size: 5rem;
+    font-size: 4.5rem;
     letter-spacing: 5px;
     text-align: center;
   }
@@ -159,6 +159,11 @@ body {
     text-align: right;
     font-family: $font-display;
     line-height: 3rem;
+  }
+  &--about-marquee {
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
   }
 
   //CONTACT SECTION

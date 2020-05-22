@@ -41,7 +41,7 @@ window.addEventListener('scroll', function () {
 
 //TEXT MARQUEE
 $('.about__marquee--text').marquee({
-  duration: 9000,
+  duration: 8000,
   gap: 30,
   direction: 'left',
   duplicated: true,
