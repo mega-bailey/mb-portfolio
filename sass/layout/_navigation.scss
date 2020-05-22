@@ -44,7 +44,7 @@
       width: auto;
     }
     @include respond(phone) {
-      font-weight: 400;
+      font-weight: 300;
     }
   }
   &__link {
